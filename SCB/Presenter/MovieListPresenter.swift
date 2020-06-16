@@ -48,10 +48,10 @@ class MovieListPresenter {
             }
             else {
                 if isFetchedFromScrolling {
-                    self?.view?.showMessage(message: "No More Result")
+                    self?.view?.showMessage(message: noMoreResultMessage)
                 }
                 else {
-                    self?.view?.showMessage(message: "No Movie Found")
+                    self?.view?.showMessage(message: noMovieFoundError)
                 }
             }
            

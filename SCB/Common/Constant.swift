@@ -10,7 +10,9 @@ import Foundation
 let apiKey = "b9bd48a6"
 let omdbBaseUrl = "http://www.omdbapi.com"
 let type = "movie"
-
+let emptySearchStringError = "Please Enter Movie Name"
+let noMoreResultMessage = "No More Result"
+let noMovieFoundError = "No Movie Found"
 class Constants {
     
     static func getMovieListUrl(searchedMovie: String, pageNumber: Int) -> URL? {

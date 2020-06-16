@@ -187,7 +187,7 @@ extension ViewController: UISearchBarDelegate {
         isLoading = false
         searchBar.resignFirstResponder()
         if searchBar.text == nil || searchBar.text == "" {
-            self.showMessage(message: "Please Enter Movie Name")
+            self.showMessage(message: emptySearchStringError)
         }
         else {
             moviePresenter.pageNumber = 1
